@@ -4,22 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".css">
+    <link rel="javascript" href=".js">
     <title>Random Password generator</title>
 </head>
+
+<script>
+function userConfirmationUpperCase(){
+    let upperCase
+ if (confirm("Would you like to add uppercase letters to your password")){
+    upperCase = true
+ }else {
+    upperCase = false
+ }
+ document.getElementById('confirm').innerHTML = true;
+}
+function userConfirmation(){
+    let upperCase
+ if (confirm("Would you like to add uppercase letters to your password")){
+    upperCase = true
+ }else {
+    upperCase = false
+ }
+ document.getElementById('confirm').innerHTML = true;
+}
+function userConfirmation(){
+    let upperCase
+ if (confirm("Would you like to add uppercase letters to your password")){
+    upperCase = true
+ }else {
+    upperCase = false
+ }
+ document.getElementById('confirm').innerHTML = true;
+}
+
+
+
+
+</script>
+
+
 <body>
     <!-- box that will be placed at the center of the screen  -->
     <section class="password-container">
+      
         <!-- header that will be above all containers -->
-    <h1 class="header1">password generator</h1>
-        <!-- text that is inside of the container that holds the generate password contatiner -->
-        <div>Generate a password</div>
+    <h1 class="header1">Password Generator</h1>
+       
+    <!-- this section will surround the box containing the random password generator aswell as the button the used will interact with to execute javascript. -->
+        <section class="box">
+           
+            <!-- text that is inside of the container that holds the generate password contatiner -->
+        <div>Generate a Password</div>
 
         <section class="random-password-container">
-        <!-- text that will be replaced by password using .innerhtml command in javascript -->
-        <div>your secure password</div>
+       
+            <!--surrounds the text that will be replaced -->
+        <section class="dotted-box">
+       
+            <!-- text that will be replaced by password using .innerhtml command in javascript -->
+        <p>Your Secure Password</p>
         </section>
-        <!-- text for button -->
-        <div class="button">Generate Password</div>
+       
+    </section>
+      
+    <!-- text for button -->
+        <button onclick="userConfirmationUpperCase()">Generate Password</button>
+
+
+        </section>
 
     </section>
 

@@ -1,24 +1,48 @@
+
+/* this affects the text at the top of the first container. */
 .header1{
 display: flex;
 justify-content: center;
 }
-
+/* this is a container that will be placed in the center holding all the other boxes in place */
 .password-container{
+display: inline-block;
+border-style: solid;
+border-color: black;
+margin-top: 12%;
+width: 50%;
+padding-bottom: 2%;
+margin-left: 25%;
+}
+/* this will be where the password will be displayed  */
+.random-password-container{
 display: flex;
 border-style: solid;
+border-width: 5px;
 border-color: black;
-margin-top: 20%;
-width: 100%;
-padding-bottom: 20%;
+justify-content: center;
+align-items: start;
+border-left-width: 0px;
+border-right-width: 0px;
+padding-bottom: 1%;
+padding-top: 1%;
+opacity: 40%;
 }
 
-.random-password-container{
-display: inline;
-border-style: solid;
-border-width: 10px;
-border-color: black;
+
+.box{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    justify-content: center;
+    align-items: start;
+    padding: 5%;
+    margin: 2%;
 }
 
-.button{
-
+.dotted-box{
+    border-style: dotted;
+    border-width: 5px;
+    width: 95%;
+    padding-bottom: 20%;
 }
